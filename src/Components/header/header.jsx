@@ -1,6 +1,27 @@
+import { useState, useEffect } from "react";
 import "./Header.css";
 
 function Header() {
+  const [ativa, setAtiva] = useState(false);
+
+  useEffect(() => {
+    function handleScroll() {
+      const secao = document.getElementById("#");
+      if (!secao) return;
+      const posicao = secao.getBoundingClientRect().top;
+      setAtiva(posicao <= 80);
+    }
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  function scrollToSection(id) {
+    const secao = document.getElementById(id);
+    if (!secao) return;
+    secao.scrollIntoView({ behavior: "smooth" });
+  }
+
   return (
     <header className="header d-flex justify-content-between align-items-center">
       <div className="logo">
@@ -17,23 +38,38 @@ function Header() {
           />
         </svg>
       </div>
-      <nav className="d-flex align-items-center">
+      <nav className="d-none-flex d-md-flex align-items-center">
         <ul className="navbar-nav d-flex flex-row justify-content-center align-items-center gap-4">
           <li className="nav-item">
-            <button className="btn-nav" onClick={""}>Início</button>
-          </li>
-          <li className="nav-item"> 
-            <button className="btn-nav" onClick={""}>Funcionalidades</button>
-          </li>
-          <li className="nav-item">
-            <button className="btn-nav" onClick={""}>Benefícios</button>
+            <button className="btn-nav" onClick={() => scrollToSection("home")}>
+              Início
+            </button>
           </li>
           <li className="nav-item">
-            <button className="btn-nav" onClick={""}>Contato</button>
+            <button
+              className="btn-nav"
+              onClick={() => scrollToSection("#")}
+            >
+              Funcionalidades
+            </button>
+          </li>
+          <li className="nav-item">
+            <button className="btn-nav" onClick={() => scrollToSection("#")}>
+              Benefícios
+            </button>
+          </li>
+          <li className="nav-item">
+            <button className="btn-nav" onClick={() => scrollToSection("#")}>
+              Contato
+            </button>
           </li>
         </ul>
       </nav>
-      <button className="btn-download">Baixar<i class="bi bi-download"></i></button>
+      {ativa && (
+        <button className="btn-download" onClick={() => scrollToSection("#")}>
+          Baixar <i className="bi bi-download"></i>
+        </button>
+      )}
     </header>
   );
 }

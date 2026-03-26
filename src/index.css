@@ -1,3 +1,7 @@
 :root {
-    --cor-fundo: #
+    --bg-principal: #0B3BB7;
+    --azul-principal: #276DD5;
+    --bg-secundario: #D7E9FF;
+    --vermelho: #DA1C1F;
+    --bg-vermelho: #FBE4E5;
 }
