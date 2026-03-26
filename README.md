@@ -15,7 +15,7 @@ Apresentar de forma clara e atrativa as funcionalidades do app, focando na exper
 - Problemas do usuário
 - Benefícios
 - Funcionalidades
-- Comparação (com vs sem app)
+- Comparação (com vs sem app)l
 - CTA
 - Contato ionoo
 
