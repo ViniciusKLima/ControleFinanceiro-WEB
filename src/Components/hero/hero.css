@@ -1,20 +1,20 @@
 .hero {
-  height: 95vh;
+  flex-direction: column;
   background-color: var(--bg-principal);
-  padding-inline: 9vw;
+  padding: 20vh 9vw 0 9vw;
   overflow: hidden;
   z-index: 1;
 
   .txt-hero {
+    z-index: 3;
     background-color: red;
-    width: 90% !important;
-    max-width: 500px !important;
 
     h1 {
       color: white;
+      font-size: clamp(1.5rem, 8vw, 5rem);
     }
     .p-hero {
-      font-size: clamp(1vw, 1rem, 2vw);
+      font-size: clamp(1.3rem, 3vw, 1rem);
       color: white;
     }
 
@@ -22,20 +22,56 @@
       background-color: white;
       border: none;
       border-radius: 15px;
-      padding: 15px 45px;
+      padding: 12px 40px;
       font-size: 2.1rem;
       color: var(--azul-principal);
     }
   }
 
-  .img-hero{
-    background: radial-gradient(circle at center, #204CBA 35%, #1947B9 36%, #1947B9 55%, #1241B8 56%, #1241B8 77%, var(--bg-principal) 66%);
-    width: 130%;
-    height: 100%;
-    transform: translateX(20%);
+  .img-hero {
+    z-index: 2;
 
-    img{
-        height: 90%;
+    img {
+      width: 280%;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    height: 95vh;
+    flex-direction: row;
+    padding: 0 9vw 0 9vw;
+
+    .txt-hero {
+      h1 {
+        color: white;
+        font-size: clamp(1rem, 3vw, 5rem);
+      }
+      .p-hero {
+        font-size: clamp(1.3rem, 3vw, 1rem);
+        color: white;
+      }
+
+      .btn-download {
+        background-color: white;
+        border: none;
+        border-radius: 15px;
+        padding: 12px 40px;
+        font-size: 2.1rem;
+        color: var(--azul-principal);
+      }
+    }
+
+    .img-hero {
+      width: 100%;
+      height: 110%;
+      transform: translateX(15%);
+
+      img {
+        width: auto;
+        height: 100%;
+      }
     }
   }
 }
