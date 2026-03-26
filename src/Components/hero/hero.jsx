@@ -16,7 +16,7 @@ function Hero() {
         </button>
       </div>
       {/*Imagem do Hero*/}
-      <div className="img-hero d-flex justify-content-center align-items-end"><img src="/public/image.png" alt="" /></div>
+      <div className="img-hero d-flex justify-content-center align-items-end"><img src="/image.png" alt="" /></div>
     </section>
   );
 }
