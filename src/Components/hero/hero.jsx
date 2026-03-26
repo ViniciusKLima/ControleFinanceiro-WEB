@@ -2,13 +2,13 @@ import "./Hero.css";
 
 function Hero() {
   return (
-    <section className="hero d-flex flex-collumn flex-md-row justify-content-center justify-content-md-between align-items-center">
+    <section className="hero d-flex justify-content-center justify-content-md-between align-items-center">
       {/*Texto Principal do Hero*/}
-      <div className="txt-hero">
-        <h1 className="tt-hero">
+      <div className="txt-hero d-flex flex-column align-items-center align-items-md-start">
+        <h1 className="tt-hero text-center text-md-start">
           Organize sua vida financeira de forma simples e inteligente.
         </h1>
-        <p className="p-hero">
+        <p className="p-hero text-center text-md-start">
           Acompanhe gastos, organize dívidas, gerencie cartões e planeje seu mês — tudo em um único app.
         </p>
         <button className="btn-download">
