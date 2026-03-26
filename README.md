@@ -17,7 +17,7 @@ Apresentar de forma clara e atrativa as funcionalidades do app, focando na exper
 - Funcionalidades
 - Comparação (com vs sem app)
 - CTA
-- Contato
+- Contato ionoo
 
 ## 🛠️ Como rodar
 ```bash
