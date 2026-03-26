@@ -6,7 +6,7 @@ function Header() {
 
   useEffect(() => {
     function handleScroll() {
-      const secao = document.getElementById("features");
+      const secao = document.getElementById("#");
       if (!secao) return;
       const posicao = secao.getBoundingClientRect().top;
       setAtiva(posicao <= 80);
@@ -48,7 +48,7 @@ function Header() {
           <li className="nav-item">
             <button
               className="btn-nav"
-              onClick={() => scrollToSection("features")}
+              onClick={() => scrollToSection("#")}
             >
               Funcionalidades
             </button>
