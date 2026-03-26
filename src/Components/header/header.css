@@ -9,6 +9,7 @@
   background: white;
   padding: 15px;
   border-radius: 30px;
+  z-index: 999;
 
   nav {
     font-size: 1.2rem;
@@ -16,6 +17,7 @@
     .btn-nav{
         background: none;
         border: none;
+        color: var(--bg-principal);
     }
   }
 
