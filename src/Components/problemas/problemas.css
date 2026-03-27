@@ -8,6 +8,7 @@
     width: 80vw;
     padding: 0 10px;
     gap: 2px;
+    position: relative;
 
     i {
       background-color: var(--azul-principal);
@@ -29,15 +30,15 @@
   }
 }
 .problem > :nth-child(-n + 2) {
+  border-bottom: 1px solid var(--azul-principal);
+}
+
+@media (min-width: 768px) {
+  .problemaCard {
     border-bottom: 1px solid var(--azul-principal);
-}
+  }
 
-@media (min-width: 768px){
-    .problemaCard{
-        border-bottom: 1px solid var(--azul-principal);
-    }
-
-    .problem > :nth-child(-n + 2) {
+  .problem > :nth-child(-n + 2) {
     border-right: 1px solid var(--azul-principal);
-}
+  }
 }

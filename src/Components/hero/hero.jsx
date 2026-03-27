@@ -1,4 +1,5 @@
 import "./Hero.css";
+import image from "../../assets/image.png";
 
 function Hero() {
   return (
@@ -16,7 +17,7 @@ function Hero() {
         </button>
       </div>
       {/*Imagem do Hero*/}
-      <div className="img-hero d-flex justify-content-center align-items-end"><img src="/image.png" alt="" /></div>
+      <div className="img-hero d-flex justify-content-center align-items-end"><img src={image}/></div>
     </section>
   );
 }
