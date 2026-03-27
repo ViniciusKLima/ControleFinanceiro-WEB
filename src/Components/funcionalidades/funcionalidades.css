@@ -1,0 +1,36 @@
+.funcionalidades{
+    width: auto;
+    height: auto;
+
+    .icone-funcionalidades {
+        color: var(--azul-principal);
+        font-size: 1.5rem;
+    }
+
+    .card{
+        padding: 10px;
+        background: var(--bg-secundario);
+
+        .tt-card{
+            color: var(--bg-principal);
+            font-size: 1rem;
+        }
+
+        .p-card{
+            color: var(--azul-principal);
+            font-size: 0.7rem;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+  .conteudo-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .icone-funcionalidades {
+    font-size: 2rem;
+  }
+}
