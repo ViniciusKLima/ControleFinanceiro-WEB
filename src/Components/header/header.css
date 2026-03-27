@@ -6,25 +6,65 @@
   width: 80%;
   max-width: 1000px;
   background: white;
-  padding: 15px;
+  padding-inline: 25px 0px;
   border-radius: 100px;
   z-index: 999;
+  transition: background-color 0.5s ease-out;
+  overflow: hidden;
+
+  .logo {
+    margin: 15px 0;
+  }
 
   nav {
     font-size: 1.5rem;
+    width: 80%;
 
-    .btn-nav{
-        background: none;
-        border: none;
-        color: var(--bg-principal);
+    ul {
+      gap: 80px !important;
+      transition: gap 1s ease;
+    }
+
+    .btn-nav {
+      background: none;
+      border: none;
+      color: var(--bg-principal);
+      transition: color 0.5s ease;
+    }
+    .btn-download {
+      border: none;
+      border-radius: 0px;
+      font-size: 0;
+      background-color: var(--bg-secundario);
+      color: var(--azul-principal);
+      width: 150px;
+      transition: all 3s ease;
     }
   }
+}
 
-  .btn-download{
-    padding: 10px 20px;
-    border: none;
-    border-radius: 10px;
-    background-color: #ffae00;
-    color: white;
+.ativa {
+  background: var(--azul-principal) !important;
+  nav {
+    gap: 10px;
+
+    ul {
+      margin-right: 15px !important;
+      gap: 35px !important;
+    }
+
+    .btn-nav {
+      background: none;
+      border: none;
+      color: white;
+    }
+    .btn-download {
+      border: none;
+      border-radius: 40px;
+      font-size: 1.5rem;
+      background-color: var(--bg-secundario);
+      color: var(--azul-principal);
+      padding: 12px 25px;
+    }
   }
 }

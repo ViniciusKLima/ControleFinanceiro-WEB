@@ -2,7 +2,7 @@ import "./problemas.css";
 
 function Problemas() {
   return (
-    <section className="problem d-flex justify-content-center justify-content-md-between align-items-center">
+    <section className="problem d-flex justify-content-center justify-content-md-between align-items-center" id="problemas">
       {/*Texto Principal do Hero*/}
       <div className="txt-hero d-flex flex-column align-items-center align-items-md-start">
         <h1 className="tt-hero text-center text-md-start">
