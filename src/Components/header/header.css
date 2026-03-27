@@ -14,6 +14,11 @@
 
   .logo {
     margin: 15px 0;
+
+    path {
+      fill: var(--azul-principal);
+      transition: fill 0.5s ease;
+    }
   }
 
   nav {
@@ -45,6 +50,10 @@
 
 .ativa {
   background: var(--azul-principal) !important;
+
+  path {
+    fill: white !important;
+  }
   nav {
     gap: 10px;
 
