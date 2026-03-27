@@ -1,4 +1,43 @@
-.problem{
-    background-color: white;
-    height: 100vh;
+.problem {
+  background-color: white;
+  padding-block: 2vh 5vh;
+
+  .problemaCard {
+    height: 17vh;
+    max-height: 200px;
+    width: 80vw;
+    padding: 0 10px;
+    gap: 2px;
+
+    i {
+      background-color: var(--azul-principal);
+      color: white;
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+    }
+
+    .txt-problema {
+      font-size: 1.1rem;
+      width: 55%;
+      color: var(--azul-principal);
+    }
+  }
+}
+.problem > :nth-child(-n + 2) {
+    border-bottom: 1px solid var(--azul-principal);
+}
+
+@media (min-width: 768px){
+    .problemaCard{
+        border-bottom: 1px solid var(--azul-principal);
+    }
+
+    .problem > :nth-child(-n + 2) {
+    border-right: 1px solid var(--azul-principal);
+}
 }
