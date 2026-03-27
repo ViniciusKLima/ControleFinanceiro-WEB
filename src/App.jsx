@@ -1,5 +1,5 @@
 import "./App.css";
-import Header from "./Components/Header/header";
+import Header from "./Components/header/header";
 import Hero from "./Components/hero/hero"
 import Problemas from "./Components/problemas/problemas"
 

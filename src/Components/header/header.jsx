@@ -27,7 +27,7 @@ function Header() {
       id="header"
       className={`header d-flex justify-content-between align-items-center ${ativa ? "ativa" : ""}`}
     >
-      <div className="logo">
+      <div className="image">
         <svg
           width="43"
           height="53"
