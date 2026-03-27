@@ -32,4 +32,8 @@
   .txt-hero {
     transform: translateX(5vw) !important;
   }
+
+  .mulher-hero{
+    transform: scale(1.1);
+  }
 }
