@@ -1,36 +1,63 @@
-.funcionalidades{
-    width: auto;
-    height: auto;
+.funcionalidades {
+  padding-block: 10vh;
+  gap: 7vh;
 
-    .icone-funcionalidades {
+  .tt-functions {
+    color: var(--azul-principal);
+  }
+
+  .container-card {
+    width: 90%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+
+    .card {
+      padding: 15px 15px 35px 15px;
+      background: var(--bg-secundario);
+      border: none;
+      width: 100%;
+
+      .icone-fuctions {
         color: var(--azul-principal);
-        font-size: 1.5rem;
+        font-size: 2.1rem;
+        margin-bottom: 8px;
+      }
+
+      .tt-card {
+        color: var(--bg-principal);
+        font-size: 0.9rem;
+        margin: 0;
+      }
+
+      .p-card {
+        color: var(--azul-principal);
+        font-size: 0.7rem;
+        margin: 0;
+      }
     }
-
-    .card{
-        padding: 10px;
-        background: var(--bg-secundario);
-
-        .tt-card{
-            color: var(--bg-principal);
-            font-size: 1rem;
-        }
-
-        .p-card{
-            color: var(--azul-principal);
-            font-size: 0.7rem;
-        }
-    }
+  }
 }
 
 @media (min-width: 768px) {
-  .conteudo-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  .container-card {
+    gap: 30px !important;
   }
+  .card {
+    padding: 30px 30px !important;
+    gap: 15px;
 
-  .icone-funcionalidades {
-    font-size: 2rem;
+    .icone-fuctions {
+      font-size: 3rem !important;
+    }
+
+    .tt-card {
+      font-size: 1.3rem !important;
+    }
+
+    .p-card {
+      font-size: 0.9rem !important;
+    }
   }
 }
