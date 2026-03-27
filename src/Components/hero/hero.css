@@ -1,76 +1,35 @@
 .hero {
-  flex-direction: column;
+  position: relative;
   background-color: var(--bg-principal);
-  padding: 20vh 9vw 0 9vw;
+  padding-top: 15vh;
   overflow: hidden;
-  z-index: 1;
 
   .txt-hero {
-    z-index: 3;
+    color: white;
+    width: 75%;
+    max-width: 455px;
+    gap: 8px;
+    transform: translateY(40px);
+    position: relative;
+    z-index: 2;
 
-    h1 {
-      color: white;
-      font-size: clamp(1.5rem, 8vw, 5rem);
-    }
     .p-hero {
-      font-size: clamp(1.3rem, 3vw, 1rem);
-      color: white;
+      font-size: small;
     }
 
     .btn-download {
       background-color: white;
       border: none;
-      border-radius: 15px;
-      padding: 12px 40px;
-      font-size: 2.1rem;
-      color: var(--azul-principal);
-    }
-  }
-
-  .img-hero {
-    z-index: 2;
-
-    img {
-      width: 280%;
+      border-radius: 10px;
+      font-size: 1.3rem;
+      color: var(--bg-principal);
+      padding: 10px 20px;
     }
   }
 }
 
-@media (min-width: 768px) {
-  .hero {
-    height: 95vh;
-    flex-direction: row;
-    padding: 0 9vw 0 9vw;
-
-    .txt-hero {
-      h1 {
-        color: white;
-        font-size: clamp(1rem, 3vw, 5rem);
-      }
-      .p-hero {
-        font-size: clamp(1.3rem, 3vw, 1rem);
-        color: white;
-      }
-
-      .btn-download {
-        background-color: white;
-        border: none;
-        border-radius: 15px;
-        padding: 12px 40px;
-        font-size: 2.1rem;
-        color: var(--azul-principal);
-      }
-    }
-
-    .img-hero {
-      width: 100%;
-      height: 110%;
-      transform: translateX(15%);
-
-      img {
-        width: auto;
-        height: 100%;
-      }
-    }
+@media (min-width: 992px) {
+  .txt-hero {
+    transform: translateX(5vw) !important;
   }
 }

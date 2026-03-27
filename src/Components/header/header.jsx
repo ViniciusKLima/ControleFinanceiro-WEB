@@ -41,7 +41,7 @@ function Header() {
         </svg>
       </div>
       <nav
-        className={`d-none d-md-flex align-items-center justify-content-between`}
+        className={`d-none d-lg-flex align-items-center justify-content-between`}
       >
         <ul
           className={`d-flex flex-row justify-content-center align-items-center gap-4 list-unstyled m-0`}

@@ -1,0 +1,46 @@
+.sobre {
+  .txt-sobre {
+    width: 80%;
+    max-width: 500px;
+    gap: 20px;
+    padding-block: 5vh;
+
+    .msg-red {
+      background-color: var(--bg-vermelho);
+      color: var(--vermelho);
+      padding: 0px 5px;
+      gap: 5px;
+      border-radius: 50px;
+
+      .txt-red {
+        margin: 0;
+        font-size: 0.7rem;
+      }
+    }
+
+    .tt-sobre {
+      width: 90%;
+      color: var(--azul-principal);
+    }
+
+    .p-sobre {
+      text-align: justify;
+      color: var(--azul-principal);
+    }
+  }
+
+  .mulher-demo {
+    width: 75%;
+    max-width: 500px;
+
+    .img-mulher{
+        width: 100%;
+    }
+  }
+}
+
+@media (min-width: 768px){
+    .sobre{
+        padding-block: 10vh;
+    }
+}
