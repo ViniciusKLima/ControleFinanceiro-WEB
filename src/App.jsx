@@ -19,6 +19,8 @@ function App() {
         <Sobre />
         <Funcionalidades />
         <Beneficios />
+        <Download />
+        <Contato />
         <Footer />
       </main>
     </>
