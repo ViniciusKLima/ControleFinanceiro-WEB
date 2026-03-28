@@ -57,7 +57,7 @@ function Header() {
           <li className="nav-item">
             <button
               className="btn-nav"
-              onClick={() => scrollToSection("problemas")}
+              onClick={() => scrollToSection("funcionalidades")}
             >
               Funcionalidades
             </button>

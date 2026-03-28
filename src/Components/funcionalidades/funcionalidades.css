@@ -3,7 +3,8 @@
 
   .tt-functions {
     color: var(--azul-principal);
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: bold;
   }
 
   .container-card {
@@ -18,7 +19,7 @@
     background-size: contain;
 
     .card {
-      padding: 15px 15px 35px 15px;
+      padding: 15px 15px 25px 15px;
       background: var(--bg-secundario);
       border: none;
       width: 100%;
@@ -30,9 +31,10 @@
       }
 
       .tt-card {
-        color: var(--bg-principal);
+        color: var(--azul-principal);
         font-size: 0.9rem;
         margin: 0;
+        font-weight: bold;
       }
 
       .p-card {

@@ -13,6 +13,10 @@
     position: relative;
     z-index: 2;
 
+    .tt-hero{
+      font-weight: bold
+    }
+
     .p-hero {
       font-size: small;
     }
