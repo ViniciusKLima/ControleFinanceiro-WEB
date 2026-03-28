@@ -43,7 +43,7 @@ function Header() {
           <li className="nav-item">
             <button
               className="btn-nav d-none d-lg-flex "
-              onClick={() => scrollToSection("inicio")}
+              onClick={() => scrollToSection("hero")}
             >
               Início
             </button>
