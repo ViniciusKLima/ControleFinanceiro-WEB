@@ -1,5 +1,5 @@
 .funcionalidades {
-  padding-block: 10vh;
+  padding-block: 10vh 8vh;
 
   .tt-functions {
     color: var(--azul-principal);
@@ -7,7 +7,7 @@
   }
 
   .container-card {
-    width: 90%;
+    width: 80%;
     max-width: 1000px;
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
