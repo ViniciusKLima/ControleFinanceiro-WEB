@@ -1,4 +1,5 @@
 import "./funcionalidades.css";
+import bg from "../../assets/logoTrace.svg";
 
 function Funcionalidades() {
   const itens = [
@@ -42,7 +43,10 @@ function Funcionalidades() {
   return (
     <section className="funcionalidades container d-flex flex-column align-items-center">
       <h4 className="tt-functions">FUNCIONALIDADES PRINCIPAIS</h4>
-      <article className="container-card row row-cols-2">
+      <article
+        className="container-card row row-cols-2"
+        style={{ backgroundImage: `url(${bg})` }}
+      >
         {itens.map((item, index) => (
           <div className="w-100 p-0 d-flex" key={index}>
             <div className="card d-flex flex-md-row align-items-md-center ">
