@@ -42,13 +42,8 @@ function Header() {
         <ul className={`d-flex align-items-center list-unstyled  m-0`}>
           <li className="nav-item">
             <button
-<<<<<<< HEAD
-              className="btn-nav"
-              onClick={() => scrollToSection("inicio")}
-=======
               className="btn-nav d-none d-lg-flex "
               onClick={() => scrollToSection("hero")}
->>>>>>> 5ea657c7578c1d9738938708122fc99b144b1a71
             >
               Início
             </button>
