@@ -65,15 +65,34 @@
         }
       }
 
-      input, .input-mensagem {
+      input,
+      .input-mensagem {
         width: 100%;
         padding: 10px;
         border-radius: 5px;
         border: 1px solid #ccc;
         background-color: #e7f4fc;
         font-size: 0.8rem;
+        transition: all 0.3s ease;
       }
 
+      input:focus,
+      .input-mensagem:focus {
+        border: 2px solid var(--azul-principal);
+        background-color: #fff;
+        box-shadow: 0 0 0 3px rgba(5, 84, 180, 0.1);
+        outline: none;
+      }
+
+      input:not(:placeholder-shown),
+      .input-mensagem:not(:placeholder-shown) {
+        border-color: var(--azul-principal);
+        background-color: #f8fbff;
+      }
+
+      .input-mensagem {
+        min-height: 150px;
+      }
 
       .btn-contato {
         width: 100%;
@@ -96,18 +115,18 @@
       }
     }
   }
-}
 
-@media (min-width: 768px){
-    #contato{
-        justify-content: space-evenly !important;
+  @media (min-width: 768px) {
+    #contato {
+      justify-content: space-evenly !important;
 
-        .tt-contato{
-            width: 80%;
-        }
+      .tt-contato {
+        width: 80%;
+      }
 
-        .formulario-contato{
-            max-width: 400px;
-        }
+      .formulario-contato {
+        max-width: 400px;
+      }
     }
+  }
 }

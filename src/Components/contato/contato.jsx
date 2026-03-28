@@ -56,7 +56,7 @@ function Contato() {
             <p className="p-span m-0">Envie uma mensagem!</p>
           </span>
           <input
-            className="input-nome"
+            className=""
             type="text"
             placeholder="Nome Completo"
           />
