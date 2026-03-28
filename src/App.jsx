@@ -5,7 +5,7 @@ import Problemas from "./Components/problemas/problemas";
 import Sobre from "./Components/sobre/sobre";
 import Funcionalidades from "./Components/funcionalidades/funcionalidades";
 import Beneficios from "./Components/beneficios/beneficios";
-import Contato from "./Compoments/contato/contato"
+import Contato from "./Components/contato/contato";
 import Footer from "./Components/footer/footer";
 
 function App() {
