@@ -3,27 +3,27 @@ import "./contato.css";
 function Contato() {
   const jasonSpan = [
     {
-      icone: "#",
-      texto: "Conte com a gente para tirar dúvidas e mellhorar sua experiência",
+      icone: "bi bi-tools",
+      texto: "Suporte técnico",
     },
     {
-      icone: "#",
+      icone: "bi bi-question-circle-fill",
       texto: "Dúvidas sobre o funcionamento do app",
     },
     {
-      icone: "#",
+      icone: "bi bi-lightbulb-fill",
       texto: "Sugestões de melhorias",
     },
     {
-      icone: "#",
+      icone: "bi bi-exclamation-triangle-fill",
       texto: "Relatar problemas ou erros",
     },
     {
-      icone: "#",
+      icone: "bi bi-chat-heart-fill",
       texto: "Feedback sobre a experiência",
     },
     {
-      icone: "#",
+      icone: "bi bi-code-slash",
       texto: "Parcerias ou colabolações",
     },
   ];
@@ -31,20 +31,18 @@ function Contato() {
   return (
     <section
       id="contato"
-      className="d-flex flex-column align-items-center justify-content-center gap-5"
+      className="d-flex flex-column flex-md-row align-items-center justify-content-center"
     >
-      <div className="textos-contato align-items-center d-flex flex-column gap-3">
-        <h4 className="tt-contato text-center">
-          Conte com a gente para tirar dúvidas e mellhorar sua experiência
+      <div className="texto-contato align-items-center d-flex flex-column">
+        <h4 className="tt-contato">
+          Conte com a gente para tirar dúvidas e mellhorar sua experiência!
         </h4>
         <div className="itens-contato">
           {jasonSpan.map((item, index) => (
-            <div className="item-contato" key={index}>
-              <p className="p-contato">
-                <i className={`bi bi-check-lg icone-contato`}></i>
-                {item.texto}
-              </p>
-            </div>
+            <p className="p-contato" key={index}>
+              <i className={item.icone}></i>
+              {item.texto}
+            </p>
           ))}
         </div>
       </div>
@@ -53,19 +51,34 @@ function Contato() {
           action=""
           className="form-contato d-flex flex-column align-items-center justify-content-center gap-3"
         >
-          <span className="d-flex tt-form gap-2">
-            <i className="icone-mensagem bi bi-chat-dots-fill"></i>
-            <p className="p-span">Envie uma mensagem!</p>
+          <span className="tt-form d-flex  align-items-center">
+            <i className="icone-mensagem bi bi-chat-dots-fill d-flex justify-content-center align-items-center"></i>
+            <p className="p-span m-0">Envie uma mensagem!</p>
           </span>
-          <input className="input-nome" type="text" placeholder="Nome Completo" />
-          <input className="input-email" type="email" name="email" placeholder="Email" />
-          <input className="input-assunto" type="text" name="assunto" placeholder="Assunto" />
-          <textarea className="input-mensagem"
+          <input
+            className="input-nome"
+            type="text"
+            placeholder="Nome Completo"
+          />
+          <input
+            className="input-email"
+            type="email"
+            name="email"
+            placeholder="Email"
+          />
+          <input
+            className="input-assunto"
+            type="text"
+            name="assunto"
+            placeholder="Assunto"
+          />
+          <textarea
+            className="input-mensagem"
             name="mensagem"
             placeholder="Escreva uma mensagem aqui..."
           ></textarea>
-          <button className="btn btn-contato" type="submit">
-            <p>ENVIAR MENSAGEM</p> <i className="bi bi-send-fill"></i>
+          <button className="btn-contato d-flex align-items-center justify-content-center" type="submit">
+            ENVIAR MENSAGEM <i className="bi bi-send-fill"></i>
           </button>
         </form>
       </div>
