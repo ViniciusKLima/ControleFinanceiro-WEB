@@ -3,8 +3,9 @@
   gap: 8vh;
 
   .tt-beneficios {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: var(--azul-principal);
+    font-weight: bold;
   }
 
   .container-beneficios {
@@ -13,6 +14,7 @@
     
     .vs {
       font-size: 2rem;
+      color: #777676;
     }
 
     .card-beneficios {
@@ -25,15 +27,16 @@
       max-width: 100%;
       justify-content: center;
       flex-direction: column;
+
+      .tt-beneficio{
+        font-weight: bold;
+      }
     }
 
     .card-semAPP {
-      background:
-        linear-gradient(170deg, #ffffff, #ffffff, #ffffff) padding-box,
-        linear-gradient(to left, #63676b, #c5baba) border-box;
-      border: 2px solid transparent;
-      background-clip: padding-box, border-box;
-      background-origin: padding-box, border-box;
+      background: none;
+      border: #777676 2px solid;
+      color: #777676;
     }
 
     .card-comAPP {
@@ -75,7 +78,7 @@
 
 @media (min-width: 768px) {
   .tt-beneficios {
-    font-size: 2rem !important;
+    font-size: 1.6rem !important;
   }
 
   .container-beneficios {

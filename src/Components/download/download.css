@@ -12,9 +12,11 @@
 
     .text-download {
       width: 70%;
+      color: #2f406c;
 
       .tt-download {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
+        font-weight: bold;
       }
 
       .p-download {
