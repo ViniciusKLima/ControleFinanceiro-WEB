@@ -6,6 +6,7 @@ import Sobre from "./Components/sobre/sobre";
 import Funcionalidades from "./Components/funcionalidades/funcionalidades";
 import Beneficios from "./Components/beneficios/beneficios";
 import Download from "./Components/download/download";
+import Contato from "./Components/contato/contato";
 import Footer from "./Components/footer/footer";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Funcionalidades />
         <Beneficios />
         <Download />
+        <Contato />
         <Footer />
       </main>
     </>
