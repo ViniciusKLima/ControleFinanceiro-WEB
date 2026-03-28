@@ -3,23 +3,25 @@ import logo from "../../assets/logoNome.svg";
 
 function Footer() {
   return (
-    <footer className="footer container d-flex flex-column align-items-center">
-      <button
-        className="btn btn-voltar-topo d-flex align-items-center"
-        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-      >
-        <span>VOLTAR PARA O TOPO</span>
-        <i className="bi bi-arrow-up-short"></i>
-      </button>
-      <div className="container d-flex flex-column align-items-center">
+    <footer className="footer d-flex flex-column justify-content-center align-items-center">
+      <div className="footer-topo d-flex justify-content-around align-items-center">
         <div className="logo-footer">
-          <img src={logo} alt="logo controle financeiro" />
+          <img className="img-logo" src={logo} />
         </div>
-        <span className="d-flex flex-row align-items-center">
+        <div className="box-btn d-flex justify-content-center">
+          <button
+            className="btn-voltar-topo d-flex justify-content-center align-items-center"
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          >
+            VOLTAR AO TOPO
+            <i className="bi bi-arrow-up-short"></i>
+          </button>
+        </div>
+        <span className="devs d-flex flex-column">
           <h4>DESENVOLVEDORES:</h4>
           <p>
             <i className="bi bi-link-45deg"></i>
-            <a href="#">Vinícius K. Lima</a>
+            <a href="https://viniciusklima-dev.vercel.app/">Vinícius K. Lima</a>
           </p>
           <p>
             <i className="bi bi-link-45deg"></i>
@@ -27,7 +29,7 @@ function Footer() {
           </p>
         </span>
       </div>
-      <p className="p-footer">
+      <p className="copy">
         Copyright &copy; 2026 - Todos os direitos reservados.
       </p>
     </footer>
