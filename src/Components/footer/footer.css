@@ -1,5 +1,5 @@
 .footer {
-  background-color: #133261;
+  background-color: #003272;
   padding-top: 3vh;
   color: white;
 
@@ -23,7 +23,7 @@
     order: 1;
 
     .btn-voltar-topo {
-      background: #205097;
+      background: #235799;
       color: white;
       border: none;
       border-radius: 5px;

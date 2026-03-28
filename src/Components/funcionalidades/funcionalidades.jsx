@@ -41,7 +41,7 @@ function Funcionalidades() {
   ];
 
   return (
-    <section className="funcionalidades container d-flex flex-column align-items-center">
+    <section id="funcionalidades" className="funcionalidades container d-flex flex-column align-items-center">
       <h4 className="tt-functions">FUNCIONALIDADES PRINCIPAIS</h4>
       <article
         className="container-card row row-cols-2"
