@@ -1,0 +1,8 @@
+body{
+  background: linear-gradient(to bottom, #0b3bb7, white, #003272);
+  overflow-x: hidden;
+
+  main{
+    background-color: white;
+  }
+}
