@@ -1,4 +1,4 @@
 body{
-  background-color: #0b3bb7;
+  background-color: linear-gradient(to bottom, #0b3bb7 10%, white 11%, white 90%, #003272 91%) !important;
   overflow-x: hidden;
 }
