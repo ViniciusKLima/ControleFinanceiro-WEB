@@ -1,5 +1,5 @@
 .problem {
-  padding-block: 2vh 5vh;
+  padding-block: 2vh 0;
 
   .problemaCard {
     height: 17vh;
@@ -29,15 +29,19 @@
   }
 }
 .problem > :nth-child(-n + 2) {
-  border-bottom: 1px solid var(--azul-principal);
+  border-bottom: 1px solid;
+  border-image: linear-gradient(to right, transparent, var(--azul-principal), transparent) 1 !important;
 }
 
 @media (min-width: 768px) {
-  .problemaCard {
-    border-bottom: 1px solid var(--azul-principal);
+  .problem {
+    border-bottom: 1px solid;
+    border-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--azul-principal), rgba(0, 128, 0, 0)) 1 !important;
   }
 
   .problem > :nth-child(-n + 2) {
-    border-right: 1px solid var(--azul-principal);
+    border-bottom: none;
+    border-right: 1px solid;
+    border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--azul-principal)) 1 !important;
   }
 }
