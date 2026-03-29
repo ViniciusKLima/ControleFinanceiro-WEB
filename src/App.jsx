@@ -4,6 +4,7 @@ import Hero from "./Components/hero/hero";
 import Problemas from "./Components/problemas/problemas";
 import Sobre from "./Components/sobre/sobre";
 import Funcionalidades from "./Components/funcionalidades/funcionalidades";
+import Demo from "./Components/demo/demo";
 import Beneficios from "./Components/beneficios/beneficios";
 import Download from "./Components/download/download";
 import Contato from "./Components/contato/contato";
@@ -18,6 +19,7 @@ function App() {
         <Problemas />
         <Sobre />
         <Funcionalidades />
+        <Demo />
         <Beneficios />
         <Download />
         <Contato />
