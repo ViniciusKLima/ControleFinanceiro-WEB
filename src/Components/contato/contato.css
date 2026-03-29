@@ -103,7 +103,8 @@
         cursor: pointer;
         background: var(--azul-principal);
         gap: 5px;
-        font-size: 0.8rem;
+        font-size: 0.85rem;
+        font-weight: bold;
 
         i {
           rotate: 45deg;
