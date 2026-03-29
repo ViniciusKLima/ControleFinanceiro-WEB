@@ -1,0 +1,80 @@
+.funcionalidades {
+  padding-block: 10vh 8vh;
+
+  .tt-functions {
+    color: var(--azul-principal);
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+
+  .container-card {
+    width: 80%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    padding: 7vh 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    .card {
+      padding: 15px 15px 25px 15px;
+      background: var(--bg-secundario);
+      border: none;
+      width: 100%;
+
+      .icone-fuctions {
+        color: var(--azul-principal);
+        font-size: 2.1rem;
+        margin-bottom: 8px;
+      }
+
+      .tt-card {
+        color: var(--azul-principal);
+        font-size: 0.9rem;
+        margin: 0;
+        font-weight: bold;
+      }
+
+      .p-card {
+        color: var(--azul-principal);
+        font-size: 0.7rem;
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .funcionalidades {
+    padding-block: 10vh;
+    gap: 5vh;
+
+    .tt-functions{
+     font-size: 2rem;
+    }
+
+    .container-card {
+      gap: 35px !important;
+
+      .card {
+        padding: 30px 30px !important;
+        gap: 15px;
+        border-radius: 15px !important;
+
+        .icone-fuctions {
+          font-size: 3rem !important;
+        }
+
+        .tt-card {
+          font-size: 1.3rem !important;
+        }
+
+        .p-card {
+          font-size: 0.9rem !important;
+        }
+      }
+    }
+  }
+}

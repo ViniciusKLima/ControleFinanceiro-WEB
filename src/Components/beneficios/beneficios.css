@@ -1,0 +1,90 @@
+.beneficios {
+  padding-bottom: 10vh;
+  gap: 8vh;
+
+  .tt-beneficios {
+    font-size: 1.4rem;
+    color: var(--azul-principal);
+    font-weight: bold;
+  }
+
+  .container-beneficios {
+    width: 80%;
+    gap: 10px;
+    
+    .vs {
+      font-size: 2rem;
+      color: #777676;
+    }
+
+    .card-beneficios {
+      padding: 0 25px;
+      border-radius: 20px !important;
+      position: relative;
+      gap: 1rem;
+      width: 400px;
+      height: 500px;
+      max-width: 100%;
+      justify-content: center;
+      flex-direction: column;
+
+      .tt-beneficio{
+        font-weight: bold;
+      }
+    }
+
+    .card-semAPP {
+      background: none;
+      border: #777676 2px solid;
+      color: #777676;
+    }
+
+    .card-comAPP {
+      background: linear-gradient(170deg, #2976eb, #2566c8, #2156a4);
+      color: white;
+    }
+
+    .lista-beneficio {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: left;
+      width: 100%;
+
+      li {
+        display: flex;
+        align-items: flex-start;
+        gap: 5px;
+        margin-bottom: 8px;
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+
+        .icone-item {
+          font-size: 1.4rem;
+          flex-shrink: 0;
+        }
+      }
+    }
+
+    .p-semAPP {
+      color: #777676;
+    }
+
+    .p-comAPP {
+      color: white;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .tt-beneficios {
+    font-size: 1.6rem !important;
+  }
+
+  .container-beneficios {
+    gap: 50px !important;
+  }
+  .card-beneficios {
+    padding: 30px !important;
+  }
+}

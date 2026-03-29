@@ -1,0 +1,140 @@
+#contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-principal);
+  padding-block: 10vh;
+  gap: 60px;
+
+  .texto-contato {
+    justify-content: center;
+    gap: 30px;
+    color: white;
+    width: 80%;
+    max-width: 400px;
+
+    .tt-contato {
+      font-size: 1.7rem;
+      font-weight: 600;
+    }
+
+    .itens-contato {
+      width: 80%;
+
+      .p-contato {
+        font-size: 0.85rem;
+
+        i {
+          padding-right: 5px;
+        }
+      }
+    }
+  }
+
+  .formulario-contato {
+    width: 85%;
+    max-width: 500px;
+
+    .form-contato {
+      width: 100%;
+      border-radius: 10px;
+      background: white;
+      padding: 25px;
+
+      .tt-form {
+        color: white;
+        padding-block: 10px;
+        width: 100%;
+        gap: 10px;
+
+        .icone-mensagem {
+          padding: 8px;
+          font-size: 1.7rem;
+          background: linear-gradient(-45deg, #104891, #0854b4, #005fd8);
+          border-radius: 6px;
+        }
+
+        .p-span {
+          font-size: 1.1rem;
+          color: var(--azul-principal);
+          font-weight: bold;
+        }
+      }
+
+      input,
+      .input-mensagem {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        background-color: #e7f4fc;
+        font-size: 0.8rem;
+        transition: all 0.3s ease;
+      }
+
+      input:focus,
+      .input-mensagem:focus {
+        border: 2px solid var(--azul-principal);
+        background-color: #fff;
+        box-shadow: 0 0 0 3px rgba(5, 84, 180, 0.1);
+        outline: none;
+      }
+
+      input:not(:placeholder-shown),
+      .input-mensagem:not(:placeholder-shown) {
+        border-color: var(--azul-principal);
+        background-color: #f8fbff;
+      }
+
+      .input-mensagem {
+        min-height: 150px;
+      }
+
+      .btn-contato {
+        width: 100%;
+        padding: 15px;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        background: var(--azul-principal);
+        gap: 5px;
+        font-size: 0.85rem;
+        font-weight: bold;
+
+        i {
+          rotate: 45deg;
+        }
+
+        &:hover {
+          background-color: var(--bg-principal);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  #contato {
+    justify-content: space-evenly !important;
+
+    .tt-contato {
+      width: 100%;
+      font-size: 2rem !important;
+    }
+
+    .itens-contato{
+      width: 100%;
+
+      .p-contato{
+        font-size: 1rem !important;
+      }
+      
+    }
+
+    .formulario-contato {
+      max-width: 400px;
+    }
+  }
+}

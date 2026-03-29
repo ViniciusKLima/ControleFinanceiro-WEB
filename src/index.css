@@ -1,7 +1,32 @@
 :root {
-    --bg-principal: #0B3BB7;
-    --azul-principal: #276DD5;
-    --bg-secundario: #D7E9FF;
-    --vermelho: #DA1C1F;
-    --bg-vermelho: #FBE4E5;
+  --bg-principal: #0b3bb7;
+  --azul-principal: #276dd5;
+  --bg-secundario: #d7e9ff;
+  --vermelho: #da1c1f;
+  --bg-vermelho: #fbe4e5;
+}
+
+/* barra inteira */
+::-webkit-scrollbar {
+  width: auto;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secundario);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--azul-principal);
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+/* hover opcional */
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--bg-principal);
+}
+
+* {
+  font-family: "Inter", sans-serif;
 }

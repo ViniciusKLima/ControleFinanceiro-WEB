@@ -1,0 +1,54 @@
+.demo {
+  overflow: hidden;
+  .lista-btn {
+    gap: 15px;
+
+    .btn-slide {
+      border: 1px solid #0b3bb7;
+      border-radius: 5px;
+      padding: 5px;
+    }
+
+    .btn-demo {
+        background-color: transparent;
+      border: none;
+      color: var(--bg-principal);
+    }
+
+    :active .btn-slide {
+      background-color: var(--bg-principal);
+      color: #fff;
+    }
+  }
+
+  .mockup-demo {
+    width: 70%;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .textos-demo {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+
+    .tt-demo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--bg-principal);
+    }
+
+    .p-demo {
+      font-size: 1rem;
+      color: var(--azul-principal);
+
+      .icone-check {
+        font-size: 1.9rem;
+        margin-right: 5px;
+      }
+    }
+  }
+}

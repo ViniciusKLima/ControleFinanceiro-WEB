@@ -4,46 +4,74 @@
   left: 50%;
   transform: translateX(-50%);
   width: 80%;
-  max-width: 1000px;
+  max-width: 900px;
   background: white;
-  padding-inline: 25px 0px;
+  padding: 10px 0px 10px 10px;
   border-radius: 100px;
   z-index: 999;
   transition: background-color 0.5s ease-out;
-  overflow: hidden;
 
-  .logo {
-    margin: 15px 0;
-
-    path {
-      fill: var(--azul-principal);
-      transition: fill 0.5s ease;
-    }
+  .logo path {
+    fill: var(--azul-principal);
+    transition: fill 0.5s ease;
   }
 
   nav {
-    font-size: 1.5rem;
-    width: 80%;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    padding: 10px;
+    overflow: hidden;
+    height: 0;
+    transition: height 3s ease;
 
     ul {
-      gap: 80px !important;
-      transition: gap 1s ease;
-    }
+      gap: 10px;
+      transform: translateY(-110%);
+      transition: transform 0.5s ease;
 
-    .btn-nav {
-      background: none;
-      border: none;
-      color: var(--bg-principal);
-      transition: color 0.5s ease;
+      .btn-nav {
+        background-color: #fff;
+        color: var(--bg-principal);
+        border: none;
+        padding: 10px 15px;
+        border-radius: 50px;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.116);
+        transition: all 0.5s ease;
+      }
+      .btn-nav:hover {
+        font-size: 1.2rem;
+        border: 1px solid var(--azul-principal);
+      }
+
+      .btn-download {
+        background-color: var(--bg-secundario);
+        color: var(--azul-principal) !important;
+        font-weight: 500;
+      }
     }
-    .btn-download {
-      border: none;
-      border-radius: 0px;
-      font-size: 0;
-      background-color: var(--bg-secundario);
-      color: var(--azul-principal);
-      width: 150px;
-      transition: all 3s ease;
+  }
+
+  .btn-menu {
+    background: none;
+    border: none;
+    padding: 0 10px 0 0;
+    color: var(--azul-principal);
+    max-height: 40px;
+    font-size: 2.5rem;
+  }
+
+  .btn-menu:hover {
+    color: var(--bg-principal);
+  }
+}
+
+.click {
+  .nav-desktop {
+    height: calc((1.2rem * 5) + 100px + 40px + 10px + 50px);
+    transition: height 0s ease;
+    ul {
+      transform: translateY(0);
     }
   }
 }
@@ -54,26 +82,88 @@
   path {
     fill: white !important;
   }
-  nav {
-    gap: 10px;
 
-    ul {
-      margin-right: 15px !important;
-      gap: 35px !important;
+  .nav-desktop {
+    .btn-nav {
+      color: white !important;
     }
 
     .btn-nav {
-      background: none;
+      background-color: var(--azul-principal);
       border: none;
-      color: white;
     }
+
     .btn-download {
-      border: none;
-      border-radius: 40px;
-      font-size: 1.5rem;
-      background-color: var(--bg-secundario);
-      color: var(--azul-principal);
-      padding: 12px 25px;
+      background-color: var(--bg-secundario) !important;
+      color: var(--azul-principal) !important;
+    }
+  }
+
+  .btn-menu {
+    color: white;
+  }
+
+  .btn-menu:hover {
+    color: #c7def0;
+  }
+}
+
+@media (min-width: 992px) {
+  .header {
+    overflow: hidden;
+    nav {
+      position: relative !important;
+      top: 0;
+      padding: 0;
+      height: auto;
+      width: 75%;
+
+      ul {
+        gap: 12%;
+        padding-right: 0;
+        transform: translateY(0);
+        transition: all 0.5s ease;
+
+        li {
+          height: 100%;
+        }
+      }
+      .btn-nav {
+        background: none !important;
+        color: var(--bg-principal);
+        border: none;
+        box-shadow: none !important;
+        transition: none !important;
+      }
+
+      .btn-nav:hover {
+        font-size: 1rem !important;
+        border: none !important;
+        color: rgb(196, 214, 247) !important;
+      }
+
+      .btn-download {
+        background-color: var(--bg-secundario) !important;
+        padding: 0 20px !important;
+        width: 120px;
+        height: 100%;
+        transition: all 0.3s ease !important;
+      }
+
+      .btn-download:hover {
+        background-color: #f3f9ff !important;
+        color: var(--azul-principal) !important;
+      }
+    }
+  }
+  .ativa {
+    nav {
+      ul {
+        gap: 5% !important;
+      }
+      .nav-item:last-child {
+        margin: 0 !important;
+      }
     }
   }
 }

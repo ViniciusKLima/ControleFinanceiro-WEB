@@ -1,3 +1,8 @@
 body{
-  background-color: #d9f8fc !important;
+  background-color: #0b3bb7 !important;
+  overflow-x: hidden;
+
+  main{
+    background-color: white;
+  }
 }
