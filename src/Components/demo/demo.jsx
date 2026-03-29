@@ -11,41 +11,41 @@ function Demo() {
       p1: "Painel geral finaceiro (total de divídas, entradas, valores pagos e pendentes)",
       p2: "Atalhos rápidos para ações principais (adicionar despesa, entrada ou cartão)",
       p3: "Lista de despesas organizadas  por data de pagamento",
-      telaMockup: mockupdemo,
+      telaMockup: mockupdemo
     },
     {
       h4: "exemplo 2",
       p1: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloremque.",
       p2: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloremque.",
       p3: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloremque.",
-      telaMockup: mockupdemo,
+      telaMockup: mockupdemo
     },
     {
       h4: "exemplo 3",
       p1: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloremque.",
       p2: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloremque.",
       p3: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloremque.",
-      telaMockup: mockupdemo,
+      telaMockup: mockupdemo
     },
     {
       h4: "exemplo 4",
       p1: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloremque.",
       p2: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloremque.",
       p3: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloremque.",
-      telaMockup: mockupdemo,
+      telaMockup: mockupdemo
     },
     {
       h4: "exemplo 5",
       p1: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloremque.",
       p2: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloremque.",
       p3: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloremque.",
-      telaMockup: mockupdemo,
+      telaMockup: mockupdemo
     },
   ];
 
   return (
     <section className="demo">
-      <button className="btn btn-primary d-none">
+      <button className="btn btn-primary d-none d-md-flex">
         Veja mais <i className="bi bi-arrow-down"></i>
       </button>
 
