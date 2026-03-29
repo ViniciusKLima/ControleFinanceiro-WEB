@@ -5,7 +5,6 @@ function Header() {
   const [ativa, setAtiva] = useState(false);
   const [clickMenu, setClickMenu] = useState(false);
 
-
   const scrollToSection = (id) => {
     const secao = document.getElementById(id);
     if (!secao) return;
@@ -23,6 +22,26 @@ function Header() {
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (clickMenu) {
+        const nav = document.querySelector(".nav-desktop");
+        const btnMenu = document.querySelector(".btn-menu");
+        if (
+          nav &&
+          btnMenu &&
+          !nav.contains(event.target) &&
+          !btnMenu.contains(event.target)
+        ) {
+          setClickMenu(false);
+        }
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+    return () => document.removeEventListener("click", handleClickOutside);
+  }, [clickMenu]);
 
   return (
     <header
