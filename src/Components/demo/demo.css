@@ -1,4 +1,7 @@
 .demo {
+  overflow: hidden;
+  height: 100vh;
+
   .lista-btn {
     gap: 15px;
 
@@ -8,8 +11,8 @@
       padding: 5px;
     }
 
-    .btn-demo {
-        background-color: transparent;
+    .btn-slide {
+      background-color: transparent;
       border: none;
       color: var(--bg-principal);
     }
@@ -20,34 +23,61 @@
     }
   }
 
-  .mockup-demo {
+  .mockup-slide {
     width: 70%;
+    height: 100%;
     margin: 0 auto;
 
     img {
-      width: 100%;
+      width: 10rem;
     }
   }
 
-  .textos-demo {
+  .textos-slide {
     width: 90%;
     margin: 0 auto;
     text-align: center;
 
-    .tt-demo {
+    .tt-slide {
       font-size: 1.5rem;
       font-weight: bold;
       color: var(--bg-principal);
     }
 
-    .p-demo {
+    .p-slide {
       font-size: 1rem;
-      color: var(--azul-principal);
+      color: var(--azul-principal);;
 
       .icone-check {
         font-size: 1.9rem;
         margin-right: 5px;
       }
     }
+  }
+
+  .slides-container {
+    position: relative;
+    overflow: hidden;
+    min-height: 500px;
+    height: auto;
+  }
+
+  .slide {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.5s ease;
+    z-index: 0;
+    visibility: hidden;
+  }
+
+  .slide.active {
+    opacity: 1;
+    transform: translateX(0);
+    z-index: 2;
+    visibility: visible;
   }
 }
