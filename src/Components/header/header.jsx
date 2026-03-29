@@ -17,6 +17,7 @@ function Header() {
       if (!secao) return;
       const posicao = secao.getBoundingClientRect().top;
       setAtiva(posicao <= 80);
+      setClickMenu(false); // Fecha o menu ao scrollar
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
