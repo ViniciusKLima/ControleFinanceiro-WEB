@@ -8,9 +8,6 @@
   gap: 60px;
 
   .texto-contato {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
     gap: 30px;
     color: white;
@@ -116,18 +113,28 @@
       }
     }
   }
+}
 
-  @media (min-width: 768px) {
-    #contato {
-      justify-content: space-evenly !important;
+@media (min-width: 768px) {
+  #contato {
+    justify-content: space-evenly !important;
 
-      .tt-contato {
-        width: 80%;
+    .tt-contato {
+      width: 100%;
+      font-size: 2rem !important;
+    }
+
+    .itens-contato{
+      width: 100%;
+
+      .p-contato{
+        font-size: 1rem !important;
       }
+      
+    }
 
-      .formulario-contato {
-        max-width: 400px;
-      }
+    .formulario-contato {
+      max-width: 400px;
     }
   }
 }
