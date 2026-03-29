@@ -1,0 +1,91 @@
+#contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background: var(--bg-principal);
+
+    .textos-contato{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        color: white;
+        
+
+        .tt-contato{
+            font-size: 1.8rem;
+        }
+
+        .p-contato{
+            font-size: 1.1rem;
+        }
+
+    }
+    .form-contato{
+        display: flex;
+        flex-direction: column;
+        width: 75vw;
+        height: 80vh;
+        border-radius: 10px;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background: white;
+        
+        span.tt-form{
+            display: flex;
+            background: green;
+            color: white;
+
+            .icone-mensagem{
+                display: flex;
+                width: 5vw;
+                font-size: 1.8rem;
+                
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                background: blue;
+            }
+
+            .p-span{
+                font-size: 1.4rem;
+                background: #000;
+            }
+        }
+
+        .input-nome, .input-email, .input-assunto{
+            width: 55vw;
+            height: 10vh;
+            padding: 5px;
+            border-radius: 5px;
+            border: 3px solid #ccc;
+        }
+
+        .input-mensagem{
+            width: 55vw;
+            height: 20vh;
+            padding: 5px;
+            border-radius: 5px;
+            border: 3px solid #ccc;
+        }
+
+        .btn-contato{
+            width: 60vw;
+            height: 5vh;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background: var(--bg-principal);
+
+            &:hover{
+                background-color: var(--azul-principal);
+            }
+        }
+    }
+
+}

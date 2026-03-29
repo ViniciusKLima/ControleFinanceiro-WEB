@@ -21,6 +21,7 @@
     .tt-sobre {
       width: 90%;
       color: var(--azul-principal);
+      font-weight: 600;
     }
 
     .p-sobre {

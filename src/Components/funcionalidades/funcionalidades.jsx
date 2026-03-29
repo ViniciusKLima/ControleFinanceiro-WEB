@@ -1,4 +1,5 @@
 import "./funcionalidades.css";
+import bg from "../../assets/logoTrace.svg";
 
 function Funcionalidades() {
   const itens = [
@@ -27,7 +28,7 @@ function Funcionalidades() {
         "Crie categorias personalizadas para organizar suas dívidas do seu jeito.",
     },
     {
-      icone: "bi bi-graph-up",
+      icone: "bi bi-piggy-bank-fill",
       titulo: "Registro de entradas",
       descricao:
         "Acompanhe todo seu dinheiro que entra e tenha certeza sobre sua renda.",
@@ -40,24 +41,24 @@ function Funcionalidades() {
   ];
 
   return (
-    <section className="funcionalidades container d-flex flex-column align-items-center">
-      <h4 className="">Funcionalidades principais</h4>
-      <div className="container">
-        <article className="container-card row row-cols-2 gx-4 gy-4">
-          {itens.map((item, index) => (
-            <div className="col d-flex" key={index}>
-              <div className="card d-flex flex-md-row align-items-md-center w-100">
-                <i className={`icone-funcionalidades ${item.icone}`}></i>
-
-                <div className="conteudo-card">
-                    <h4 className="tt-card">{item.titulo}</h4>
-                    <p className="p-card">{item.descricao}</p>
-                </div>
+    <section id="funcionalidades" className="funcionalidades container d-flex flex-column align-items-center">
+      <h4 className="tt-functions">FUNCIONALIDADES PRINCIPAIS</h4>
+      <article
+        className="container-card row row-cols-2"
+        style={{ backgroundImage: `url(${bg})` }}
+      >
+        {itens.map((item, index) => (
+          <div className="w-100 p-0 d-flex" key={index}>
+            <div className="card d-flex flex-md-row align-items-md-center ">
+              <i className={`icone-fuctions ${item.icone}`}></i>
+              <div className="conteudo-card">
+                <h4 className="tt-card">{item.titulo}</h4>
+                <p className="p-card">{item.descricao}</p>
               </div>
             </div>
-          ))}
-        </article>
-      </div>
+          </div>
+        ))}
+      </article>
     </section>
   );
 }
