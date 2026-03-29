@@ -21,7 +21,7 @@ function Footer() {
           <h4>DESENVOLVEDORES:</h4>
           <p>
             <i className="bi bi-link-45deg"></i>
-            <a href="https://viniciusklima-dev.vercel.app/">Vinícius K. Lima</a>
+            <a href="https://viniciusklima-dev.vercel.app/" target="_blank">Vinícius K. Lima</a>
           </p>
           <p>
             <i className="bi bi-link-45deg"></i>
