@@ -25,7 +25,7 @@ function Footer() {
           </p>
           <p>
             <i className="bi bi-link-45deg"></i>
-            <a href="#">Lucas R. Alves</a>
+            <a href="#" target="_blank">Lucas R. Alves</a>
           </p>
         </span>
       </div>
