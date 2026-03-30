@@ -1,83 +1,67 @@
 .demo {
   overflow: hidden;
-  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    white,
+    var(--bg-secundario) 10%,
+    var(--bg-secundario) 90%,
+    #284368 130%
+  );
+  padding-block: 10vh;
+  gap: 5vh;
+
 
   .lista-btn {
-    gap: 15px;
-
-    .btn-slide {
-      border: 1px solid #0b3bb7;
-      border-radius: 5px;
-      padding: 5px;
-    }
-
-    .btn-slide {
-      background-color: transparent;
-      border: none;
-      color: var(--bg-principal);
-    }
-
-    :active .btn-slide {
-      background-color: var(--bg-principal);
-      color: #fff;
-    }
-  }
-
-  .mockup-slide {
-    width: 70%;
-    height: 100%;
-    margin: 0 auto;
-
-    img {
-      width: 10rem;
-    }
-  }
-
-  .textos-slide {
     width: 90%;
-    margin: 0 auto;
-    text-align: center;
+    max-width: 600px;
 
-    .tt-slide {
-      font-size: 1.5rem;
-      font-weight: bold;
-      color: var(--bg-principal);
+    .btn-slide {
+      border: 2px solid var(--azul-principal) !important;
+      border-radius: 6px;
+      padding: 3px 5px;
+      background-color: transparent !important;
+
+      button {
+        background-color: transparent;
+        border: none;
+        color: var(--azul-principal) !important;
+        font-size: 0.7rem;
+        font-family: "inter" !important;
+      }
     }
 
-    .p-slide {
-      font-size: 1rem;
-      color: var(--azul-principal);;
+    .btn-slide:active {
+      background-color: var(--azul-principal) !important;
 
-      .icone-check {
-        font-size: 1.9rem;
-        margin-right: 5px;
+      button {
+        color: #fff !important;
+        font-weight: 600;
       }
     }
   }
 
   .slides-container {
-    position: relative;
-    overflow: hidden;
-    min-height: 500px;
-    height: auto;
-  }
+    width: 90%;
 
-  .slide {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transform: translateX(100%);
-    transition: all 0.5s ease;
-    z-index: 0;
-    visibility: hidden;
-  }
+    .slide {
+      gap: 5vh;
+      .mockup-slide {
+        width: 90%;
 
-  .slide.active {
-    opacity: 1;
-    transform: translateX(0);
-    z-index: 2;
-    visibility: visible;
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .textos-slide {
+      gap: 15px;
+      color: #003272;
+
+      .tt-slide{
+        font-size: 2rem;
+        width: 100%;
+      }
+    }
   }
 }

@@ -13,65 +13,37 @@ function Demo() {
       p3: "Lista de despesas organizadas  por data de pagamento",
       telaMockup: mockupSlide,
     },
-    {
-      h4: "exemplo 2",
-      p1: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloremque.",
-      p2: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloremque.",
-      p3: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloremque.",
-      telaMockup: mockupSlide,
-    },
-    {
-      h4: "exemplo 3",
-      p1: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloremque.",
-      p2: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloremque.",
-      p3: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloremque.",
-      telaMockup: mockupSlide,
-    },
-    {
-      h4: "exemplo 4",
-      p1: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloremque.",
-      p2: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloremque.",
-      p3: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloremque.",
-      telaMockup: mockupSlide,
-    },
-    {
-      h4: "exemplo 5",
-      p1: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloremque.",
-      p2: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloremque.",
-      p3: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloremque.",
-      telaMockup: mockupSlide,
-    },
   ];
 
   return (
-    <section className="demo">
-      <ul className="lista-btn d-flex justify-content-center list-unstyled">
+    <section className="demo d-flex flex-column justify-content-center align-items-center">
+      <ul className="lista-btn d-flex justify-content-between list-unstyled">
         {["Home", "Despesas", "Entradas", "Gerenciamento", "Cartões"].map(
           (item, index) => (
             <li className="btn-slide" key={index}>
               <button
-                className={`btn-slide ${ativo === index ? "active" : ""}`}
+                className={` ${ativo === index ? "active" : ""}`}
                 onClick={() => setAtivo(index)}
               >
                 {item}
               </button>
             </li>
-          )
+          ),
         )}
       </ul>
 
-      <div className="slides-container">
+      <div className="slides-container d-flex flex-column flex-lg-row align-items-center justify-content-center">
         {ConteudoSlide.map((item, index) => (
           <div
-            className={`slide ${ativo === index ? "active" : ""}`}
+            className={`slide d-flex flex-column align-items-center ${ativo === index ? "active" : ""}`}
             key={index}
           >
             <div className="mockup-slide d-flex align-items-center justify-content-center">
               <img src={item.telaMockup} alt="Mockup slide" />
             </div>
 
-            <div className="textos-slide d-flex flex-column align-items-center gap-3">
-              <h4 className="tt-slide">{item.h4}</h4>
+            <div className="textos-slide d-flex flex-column align-items-start align-items-lg-start">
+              <h4 className="tt-slide text-center text-lg-start">{item.h4}</h4>
 
               <p className="p-slide">
                 <i className="icone-check bi bi-check-circle-fill"></i>
