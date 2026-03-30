@@ -1,7 +1,11 @@
 import { useState } from "react";
 import "./demo.css";
-import mockupSlide from "../../assets/mockup-slide.svg";
 import logoGradiente from "../../assets/logo-gradiente.png";
+import mockupHome from "../../assets/mockups/mockupHome.png"
+import mockupDespesas from "../../assets/mockups/mockupDespesas.png"
+import mockupContas from "../../assets/mockups/mockup-Contas.png"
+import mockupCartoes from "../../assets/mockups/mockup-Cartoes.png"
+import mockupCategorias from "../../assets/mockups/mockup-Categorias.png"
 
 function Demo() {
   const [ativo, setAtivo] = useState(0);
@@ -14,43 +18,43 @@ function Demo() {
         "Atalhos rápidos para ações principais (adicionar despesa, entrada ou cartão)",
         "Lista de despesas organizadas  por data de pagamento",
       ],
-      telaMockup: mockupSlide,
+      telaMockup: mockupHome,
     },
     {
-      h4: "exemplo 2",
+      h4: "Tela de Acompanhamento de Despesas",
       paragraphs: [
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloremque.",
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloremque.",
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloremque.",
       ],
-      telaMockup: mockupSlide,
+      telaMockup: mockupDespesas,
     },
     {
-      h4: "exemplo 3",
+      h4: "Tela de Contas Bancárias",
       paragraphs: [
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloremque.",
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloremque.",
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloremque.",
       ],
-      telaMockup: mockupSlide,
+      telaMockup: mockupContas,
     },
     {
-      h4: "exemplo 4",
+      h4: "Tela de Cartões e Faturas",
       paragraphs: [
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloremque.",
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloremque.",
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloremque.",
       ],
-      telaMockup: mockupSlide,
+      telaMockup: mockupCartoes,
     },
     {
-      h4: "exemplo 5",
+      h4: "Tela de Categorias de Despesas",
       paragraphs: [
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloremque.",
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloremque.",
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloremque.",
       ],
-      telaMockup: mockupSlide,
+      telaMockup: mockupCategorias,
     },
   ];
 
@@ -61,7 +65,7 @@ function Demo() {
         style={{ backgroundImage: `url(${logoGradiente})` }}
       >
         <ul className="lista-btn d-flex justify-content-between list-unstyled">
-          {["Home", "Despesas", "Entradas", "Gerenciamento", "Cartões"].map(
+          {["Home", "Despesas", "Entradas", "Cartões", "Categorias"].map(
             (item, index) => (
               <li className="btn-slide d-flex align-items-center" key={index}>
                 <button
