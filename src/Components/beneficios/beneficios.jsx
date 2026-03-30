@@ -1,5 +1,6 @@
 import "./beneficios.css";
 
+
 function Beneficios() {
   const semAppItens = [
     "Não sabe para onde o dinheiro está indo",
