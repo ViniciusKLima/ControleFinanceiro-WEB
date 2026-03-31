@@ -11,8 +11,6 @@ function Beneficios() {
     "Não consegue planejar o futuro",
     "Ansiedade ao pensar em dinheiro",
     "Não tem visão do que já pagou ou deve",
-    "Usa planilhas e acaba abandonando",
-    "Sensação de estar sempre atrasado",
   ];
 
   const comAppItens = [
@@ -23,8 +21,6 @@ function Beneficios() {
     "Planejamento mensal eficiente",
     "Clareza sobre o presente e o futuro",
     "Mais tranquilidade e segurança",
-    "Acompanhamento do que já foi pago e pendente",
-    "Facilidade para registrar e organizar tudo",
     "Sensação de controle e organização",
   ];
 

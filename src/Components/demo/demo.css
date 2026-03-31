@@ -69,7 +69,9 @@
       color: #2156A4;
 
       .tt-slide {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        font-weight: bold;
+        width: 85%;
       }
 
       .paragrafos {
